@@ -1,27 +1,32 @@
 .form {
   margin: auto;
   display: flex;
-  flex-direction: column;    
-  max-width: 500px;
+  flex-direction: column;      
+  max-width: 500px;  
 }
 
 .form__label {
+  margin-bottom: 20px;
   font-weight: 600;
   color: #256543;
 }
 
 .form__text-field {
-  padding: 5px 25px;  
+  height: 20px;
+  padding: 15px 5px;  
   background-color: turquoise;
+  border-radius: 5px;
+
 }
 
 .form__submit-btn {
   display: block;
+  border: none;
   height: 30px;
   width: 100px;
   background-color: silver;
   box-shadow: 4px 0px 0px grey;
-  color: #212121;
+  color: #000000;
   transition: 
     background-color 250ms cubic-bezier(0.165, 0.84, 0.44, 1),
     box-shadow 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -29,5 +34,5 @@
 
 .form__submit-btn:hover {
   background-color: honeydew;
-  box-shadow: green;
+  box-shadow: red;
 }
