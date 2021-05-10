@@ -1,0 +1,51 @@
+.hiro__space {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
+    url(./stars_img.jpg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  max-width: 1920px;
+  height: auto;
+}
+
+.hero__sky-window {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  position: relative;
+  height: 44rem;
+  overflow: hidden;
+}
+
+.hero__words {
+  height: 600px;
+  width: 400px;
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  color: rgb(255, 230, 66);
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: center;
+  pointer-events: none;
+  /* transform: translateY(100%) scale(1, 1) perspective(400px) rotateX(75deg); */
+  animation-name: flight-anim;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flight-anim {
+  0% {
+    transform: translateY(130%) scale(4, 4) perspective(400px) rotateX(60deg);
+  }
+  90% {
+    transform: translateY(0) scale(0.3, 0.2) perspective(400px) rotateX(75deg);
+    color: rgba(255, 230, 66, 1);
+  }
+  100% {
+    transform: translateY(0) scale(0.2, 0.05) perspective(400px) rotateX(75deg);
+    color: transparent;
+  }
+}
