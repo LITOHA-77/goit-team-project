@@ -1,0 +1,42 @@
+.test-sextion__container {
+    padding: 100px 50px;
+    background-image: url('../images/test-section/brooke.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.title {
+    margin-bottom: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.5;
+    color: #262626;
+
+
+}
+.test-section__text {
+    display: flex;
+    width: 600px;
+    height: 100px;
+    margin-bottom: 50px;
+
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #262626;
+
+}
+.test-section__button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    background-color: #9C9C42;
+    border-radius: 10px;
+    
+}
